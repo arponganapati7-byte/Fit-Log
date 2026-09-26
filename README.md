@@ -520,7 +520,7 @@ Then create a Pull Request on GitHub.
 
 # 👨‍💻 Author
 
-## Ashim Ganapati
+## Arpon Ganapati
 
 **FitLog — Workout Library**
 

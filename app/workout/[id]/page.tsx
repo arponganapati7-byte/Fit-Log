@@ -137,28 +137,36 @@ export default function WorkoutDetails({
     : workout.equipment || "None";
 
   function handlePlan() {
-    const success = addToPlan(workout);
-
-    if (success) {
-      showToast("Added to today's plan");
-    } else if (isInPlan(workout.id)) {
-      showToast("Already in today's plan");
-    } else {
-      showToast(
-        "Today's plan is full — maximum 5 workouts"
-      );
-    }
+  if (!workout) {
+    return;
   }
+
+  const success = addToPlan(workout);
+
+  if (success) {
+    showToast("Added to today's plan");
+  } else if (isInPlan(workout.id)) {
+    showToast("Already in today's plan");
+  } else {
+    showToast(
+      "Today's plan is full — maximum 5 workouts"
+    );
+  }
+}
 
   function handleSave() {
-    const success = saveWorkout(workout);
-
-    if (success) {
-      showToast("Saved for later");
-    } else {
-      showToast("Already saved");
-    }
+  if (!workout) {
+    return;
   }
+
+  const success = saveWorkout(workout);
+
+  if (success) {
+    showToast("Saved for later");
+  } else {
+    showToast("Already saved");
+  }
+}
 
   return (
     <main className="min-h-screen bg-[#080808] text-white">
@@ -168,7 +176,7 @@ export default function WorkoutDetails({
       {/* TOAST */}
 
       {message && (
-        <div className="fixed right-5 top-24 z-[100] rounded-xl bg-[#ccff00] px-5 py-3 font-bold text-black shadow-2xl">
+        <div className="fixed right-5 top-24 .z-[100] rounded-xl bg-[#ccff00] px-5 py-3 font-bold text-black shadow-2xl">
           {message}
         </div>
       )}

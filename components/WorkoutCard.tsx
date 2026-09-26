@@ -32,7 +32,7 @@ export default function WorkoutCard({
       className="group overflow-hidden rounded-2xl border border-white/10 bg-[#111] transition hover:-translate-y-1 hover:border-[#ccff00]/50"
     >
 
-      <div className="aspect-[4/3] overflow-hidden bg-white/5">
+      <div className="aspect-\[4/3]\ overflow-hidden bg-white/5">
 
         {workout.image ? (
           <img

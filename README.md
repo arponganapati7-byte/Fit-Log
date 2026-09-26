@@ -23,7 +23,8 @@ add up live.
 8. **Fully Responsive + 404** — works on mobile, tablet and desktop, with a custom not-found page.
 
 ## 🚀 Live Link
-coming soon...
+
+https://fit-log-seven-sand.vercel.app/
 
 ## 💻 Run Locally
 \`\`\`bash

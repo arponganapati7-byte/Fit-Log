@@ -23,7 +23,7 @@ add up live.
 8. **Fully Responsive + 404** — works on mobile, tablet and desktop, with a custom not-found page.
 
 ## 🚀 Live Link
-https://your-vercel-link.vercel.app
+coming soon...
 
 ## 💻 Run Locally
 \`\`\`bash

@@ -1,4 +1,4 @@
-export interface workout {
+export interface Workout {
   id: string | number;
   name: string;
   description?: string;
